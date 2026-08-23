@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AJ's Birthday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="/images/favicon.png"></head>
+<body>
+
+<div id="intro" class="intro">
+  <div class="jp">今日は、特別な日。</div>
+  <div class="en">TODAY IS A SPECIAL DAY.</div>
+  <div class="jp second">主人公の誕生日。</div>
+  <div class="hero-line">IT'S YOUR BIRTHDAY, HERO.</div>
+  <button id="begin" class="ghost">BEGIN THE CHAPTER <b>→</b></button>
+</div>
+
+
+
+<main id="site" class="hidden">
+<div class="noise"></div>
+<header class="topbar"><span>AJ // BIRTHDAY FILE</span><span id="chapter">CHAPTER 01</span></header>
+
+<section class="hero" id="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">THE STORY CONTINUES</p>
+    <h1>AJ<span>.</span></h1>
+    <p class="subtitle">Another year.<br><strong>Another chapter.</strong></p>
+    <button class="primary" data-go="gift">ENTER CHAPTER <b>→</b></button>
+  </div>
+  <div class="portrait"><div class="scan"></div><img src="aj-photo.jpg" alt="AJ"></div>
+</section>
+
+<section class="chapter gift" id="gift">
+  <div class="tag">CHAPTER 02 · FROM ME</div>
+  <div class="gift-layout">
+    <div>
+      <p class="eyebrow">A GIFT FROM ME</p>
+      <h2>FOR<br><em>AJ.</em></h2>
+      <p class="desc">Happy Birthday, AJ! 🎉
+I wanted to get you something you actually need, so after years of searching… I finally found it. 🧠</p>
+      <button class="primary" data-go="friends">SEE THE OTHER MESSAGES <b>→</b></button>
+    </div>
+    <div class="my-gallery">
+      <img src="images/mygift.jpg" alt="My gift">
+      <p>A Brain</p>
+      <!-- Add another photo by copying:
+      <img src="images/my-gift-2.jpg" alt="My gift">
+      <p>YOUR NEXT CAPTION.</p>
+      -->
+    </div>
+  </div>
+</section>
+
+<section class="chapter friends" id="friends">
+
+  <div class="tag">CHAPTER 03 · FROM YOUR PEOPLE</div>
+
+  <div class="friends-head">
+    <p class="eyebrow">MESSAGES HAVE ARRIVED</p>
+    <h2>YOUR<br><em>PEOPLE.</em></h2>
+    <p>Click a friend to reveal their wish and gift.</p>
+  </div>
+
+  <div class="friend-grid">
+
+    <!-- FRIEND 01 -->
+    <button class="friend-card"
+      data-name="Keviya's gift"
+      data-message="WRITE THEIR BIRTHDAY WISH HERE."
+      data-gift="A girlfriend"
+      data-image="images/elegant-anime-girl-stockcake.jpg">
+
+      <span>01</span>
+      <strong>Keviya's gift</strong>
+      <small>OPEN WISH →</small>
+    </button>
+
+
+    <!-- FRIEND 02 -->
+    <button class="friend-card"
+      data-name="kitty's gift"
+      data-message="To My Big Bro AJ 🖤✨
+
+ජීවිතේට හම්බවෙන හැම යාලුවෙක්ම යාලුවෙක් විතරක් නෙවෙයි… සමහරු අපේම සහෝදරයෝ වගේ වෙනවා. 🫂
+
+AJ, ඔයා මට ඒ වගේම ලොකු අයියා කෙනෙක්.
+මට හැම වෙලාවෙම support එකක් දීලා, හොඳට guide කරලා, මතක හිටින memories ගොඩක් දුන්නට ගොඩක් ස්තූතියි. ❤️
+
+ඔයාගේ හැම හීනයක්ම හැබෑ වෙන්න, හැමදාම සතුටින් ඉන්න, ජීවිතේ ඉස්සරහටම යන්න ලැබෙන්න කියලා මම හදවතින්ම wish කරනවා. ✨
+
+Stay strong, stay awesome, Big Bro AJ. 👑
+අපේ friendship එක හැමදාම මේ වගේම තියෙන්න ඕනේ. 🫂💜"
+
+      data-gift="AJ junior"
+      data-image="images/IMG_8353.png">
+
+      <span>02</span>
+      <strong>kitty's gift</strong>
+      <small>OPEN WISH →</small>
+    </button>
+
+
+    <!-- FRIEND 03 -->
+    <button class="friend-card"
+      data-name="Lexi's gift"
+      data-message="Happy birthday aj"
+      data-gift="One piece!"
+      data-image="https://www.lemon8-app.com/seo/image?item_id=7545893204026032695&index=2&sign=eb2234dc9f011fa6d1e87ad8bf3e1e2c">
+
+      <span>03</span>
+      <strong>Lexi's gift</strong>
+      <small>OPEN WISH →</small>
+    </button>
+
+
+    <!-- FRIEND 04 -->
+    <button class="friend-card"
+      data-name="zero's gift"
+      data-message="Happy birthday!"
+      data-gift="Waguri"
+      data-image="images/images.jfif">
+
+      <span>04</span>
+      <strong>zero's gift</strong>
+      <small>OPEN WISH →</small>
+    </button>
+
+
+    <!-- FRIEND 05 -->
+    <button class="friend-card"
+      data-name="Frozty's gift"
+      data-message="Happy birthdayyyyyy"
+      data-gift="... I hope u like it"
+      data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2yb0gUe9DRU98XEOE4lf6OWD4DDtZGoydV7OAQ2Jaww&s=10">
+
+      <span>05</span>
+      <strong>Frozty's gift</strong>
+      <small>OPEN WISH →</small>
+    </button>
+
+
+    <!-- FRIEND 06 -->
+    <button class="friend-card"
+      data-name="Flame's gift"
+      data-message="happy birthday"
+      data-gift="ubata nathi ekk"
+      data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeO0ccNpkrg49eakK72f75CBWCs60TuQapfsI06Vsiyw&s=10">
+
+      <span>06</span>
+      <strong>Flame's gift</strong>
+      <small>OPEN WISH →</small>
+    </button>
+
+
+    <!-- FRIEND 07 -->
+    <button class="friend-card"
+      data-name="eran's gift"
+      data-message="happy brithday bro"
+      data-gift="I wish u will find luck"
+      data-image="https://img.freepik.com/premium-photo/four-leaf-clover-hand-symbol-luck-good-fortune_1150025-2533.jpg">
+
+      <span>07</span>
+      <strong>Eran's gift</strong>
+      <small>OPEN WISH →</small>
+    </button>
+
+
+    <!-- FRIEND 08 -->
+    <button class="friend-card"
+      data-name="Aizen's wish"
+      data-message="happy birthday my friend"
+      data-gift="he he nobody i mean fking nobody"
+      data-image="https://i.etsystatic.com/52832170/r/il/a7adbe/6419323155/il_fullxfull.6419323155_qg2f.jpg">
+
+      <span>08</span>
+      <strong>Aizen's wish</strong>
+      <small>OPEN WISH →</small>
+    </button>
+
+
+    <!-- FRIEND 09 -->
+    <button class="friend-card"
+      data-name="Ayush's gidt"
+      data-message="Happy birthday bro."
+      data-gift=" this gift is perfect for someone like u"
+      data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdE8-nxpbsizGmiLoChM3qRWMYfhr_bvJoICB5Qd5yqW3oy4p7A3DXM93e&s=10">
+
+      <span>09</span>
+      <strong>Ayush's gift</strong>
+      <small>OPEN WISH →</small>
+    </button>
+
+
+    <!-- FRIEND 10 -->
+    <button class="friend-card"
+      data-name="Mitenerd's gift"
+      data-message="happy birthday"
+      data-gift="beer. ub gahannaththan mata deepan 
+      ~Mitenerd"
+      data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCsT1oL1EoxuOeWAiG-yi9ie7LHmjGbrk0DwfjaJxdSA&s=10">
+
+      <span>10</span>
+      <strong>Mitenerd's gift</strong>
+      <small>OPEN WISH →</small>
+    </button>
+
+  </div>
+
+</section>
+
+
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close" id="close">×</button>
+    <p class="eyebrow">MESSAGE RECEIVED</p>
+    <h3 id="modalName">FRIEND</h3>
+    <p class="message" id="modalMessage"></p>
+    <div class="modal-gift">
+      <p class="gift-label">🎁 THEIR GIFT</p>
+      <img id="modalImage" src="" alt="Gift">
+      <p id="modalGift"></p>
+    </div>
+    <button class="primary" id="close2">BACK TO MESSAGES</button>
+  </div>
+</div>
+
+<section class="finale" id="finale">
+  <p class="final-kicker">FINAL CHAPTER</p>
+  <h2>HAPPY<br>BIRTHDAY<br><span>AJ.</span></h2>
+  <p>You've reached the end of this chapter.</p>
+  <div class="final-line">BUT NOT THE STORY.</div>
+  <button class="primary" id="restart">↻ REPLAY FROM THE BEGINNING</button>
+  <div id="particles"></div>
+</section>
+</main>
+
+<!-- SECRET DRAGON GIFT -->
+<button id="dragonSecret" class="dragon-secret" aria-label="Secret gift">
+  🐉
+</button>
+
+<section class="dragon-gift" id="dragonGift">
+  <div class="dragon-content">
+
+    <p class="eyebrow">SECRET CHAPTER · FROM ME</p>
+
+    <div class="dragon-symbol">🐉</div>
+
+    <h2>THE<br><em>DRAGON.</em></h2>
+
+    <p>
+      You found the secret gift.
+    </p>
+
+    <p class="dragon-message">
+      Happy Birthday, AJ. 🖤<br>
+      Some gifts are meant to be found.
+      This one belongs to you.
+    </p>
+
+    <img
+      src="https://media.giphy.com/media/3og0IwLYKuUp4wrpIc/giphy.gif"
+      alt="Dragon gift"
+      class="dragon-image"
+    >
+
+    <button class="primary" id="dragonBack">
+      RETURN TO THE STORY <b>→</b>
+    </button>
+
+  </div>
+</section>
+
+<audio id="bgMusic" loop preload="auto">
+  <source src="music/birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicToggle" class="music-toggle">
+  ♫ <span>ON</span>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
